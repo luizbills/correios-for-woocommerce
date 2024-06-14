@@ -495,14 +495,7 @@ abstract class WC_Correios_Shipping extends WC_Shipping_Method {
 	 */
 	public function calculate_shipping( $package = array() ) {
 		// Only available in Brazil
-		if ( 'BR' !== $package['destination']['country'] ) {
-			return;
-		}
-
-		$destination_postcode = wc_correios_sanitize_postcode( $package['destination']['postcode'] ?? '' );
-		if ( ! $destination_postcode ) {
-			$error_message = __( 'Invalid zip code.', 'correios-for-woocommerce' );
-			$this->add_cart_notice( $error_message );
+		if ( 'BR' !== $package['destination']['country'] || empty( 1 ) ) {
 			return;
 		}
 
@@ -511,8 +504,15 @@ abstract class WC_Correios_Shipping extends WC_Shipping_Method {
 			return;
 		}
 
-		$shipping = $this->get_rate( $package );
+		// Check for valid postcode
+		$destination_postcode = wc_correios_sanitize_postcode( $package['destination']['postcode'] ?? '' );
+		if ( ! $destination_postcode ) {
+			// $error_message = __( 'Invalid zip code.', 'correios-for-woocommerce' );
+			// $this->add_cart_notice( $error_message );
+			return;
+		}
 
+		$shipping = $this->get_rate( $package );
 		if ( empty( $shipping ) ) {
 			return;
 		}

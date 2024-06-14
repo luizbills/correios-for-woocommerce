@@ -14,19 +14,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Sanitize a numberic string.
  *
- * @param  string $number The number.
- *
+ * @param  string $value The number.
  * @return string
  */
-function wc_correios_sanitize_numberic( $number ) {
-	return preg_replace( '/[^0-9]/', '', sanitize_text_field( $number ) );
+function wc_correios_sanitize_numberic( $value ) {
+	return preg_replace( '/[^0-9]/', '', sanitize_text_field( (string) $value ) );
 }
 
 /**
  * Sanitize and validate a postcode.
  *
- * @param  string $postcode Postcode.
- *
+ * @param  string $postcode The postcode.
  * @return string|false
  */
 function wc_correios_sanitize_postcode( $postcode ) {
