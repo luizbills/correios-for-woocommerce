@@ -863,7 +863,7 @@ class WC_Correios_Webservice {
 		$request_url = $query_args ? add_query_arg( $query_args, $url ) : $url;
 		$request_args = wp_parse_args( $request_args, [
 			'method' => 'GET',
-			'timeout' => 10
+			'timeout' => apply_filters( 'woocommerce_correios_request_timeout', 60 )
 		] );
 
 		$this->log( "Requesting: {$request_args['method']} $request_url" );

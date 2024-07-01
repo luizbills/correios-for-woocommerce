@@ -6,8 +6,8 @@ msgstr ""
 "WooCommerce - Stable (latest release)\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/correios-for-"
 "woocommerce\n"
-"POT-Creation-Date: 2023-09-05T16:54:10-03:00\n"
-"PO-Revision-Date: 2023-09-05 16:57-0300\n"
+"POT-Creation-Date: 2024-07-01T13:50:08+00:00\n"
+"PO-Revision-Date: 2024-07-01 10:51-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -15,18 +15,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. Plugin Name of the plugin
+#: correios-for-woocommerce.php
 #: includes/admin/views/html-admin-missing-dependencies.php:22
 msgid "Luiz Bills - Correios for WooCommerce"
 msgstr "Luiz Bills - Correios para WooCommerce"
 
 #. Plugin URI of the plugin
+#: correios-for-woocommerce.php
 msgid "https://github.com/luizbills/correios-for-woocommerce"
 msgstr "https://github.com/luizbills/correios-for-woocommerce"
 
 #. Description of the plugin
+#: correios-for-woocommerce.php
 msgid ""
 "Adds Correios shipping methods to your WooCommerce store. This plugin is "
 "based on <strong>Claudio Sanches - Correios for WooCommerce</strong> plugin."
@@ -36,10 +39,12 @@ msgstr ""
 "WooCommerce</strong>."
 
 #. Author of the plugin
+#: correios-for-woocommerce.php
 msgid "Luiz Bills"
 msgstr "Luiz Bills"
 
 #. Author URI of the plugin
+#: correios-for-woocommerce.php
 msgid "https://luizpb.com/"
 msgstr "https://luizpb.com/"
 
@@ -49,8 +54,8 @@ msgid "%s is a shipping method from Correios."
 msgstr "%s é um método de entrega dos Correios."
 
 #: includes/abstracts/class-wc-correios-shipping.php:170
-#: includes/integrations/class-wc-correios-integration.php:169
-#: includes/integrations/class-wc-correios-integration.php:178
+#: includes/integrations/class-wc-correios-integration.php:180
+#: includes/integrations/class-wc-correios-integration.php:189
 msgid "View logs."
 msgstr "Ver logs."
 
@@ -64,8 +69,8 @@ msgstr "Nenhuma classe de entrega"
 
 #: includes/abstracts/class-wc-correios-shipping.php:213
 #: includes/emails/class-wc-correios-tracking-email.php:50
-#: includes/integrations/class-wc-correios-integration.php:230
-#: includes/integrations/class-wc-correios-integration.php:250
+#: includes/integrations/class-wc-correios-integration.php:241
+#: includes/integrations/class-wc-correios-integration.php:267
 msgid "Enable/Disable"
 msgstr "Habilitar/Desabilitar"
 
@@ -250,9 +255,9 @@ msgid "Testing"
 msgstr "Teste"
 
 #: includes/abstracts/class-wc-correios-shipping.php:354
-#: includes/integrations/class-wc-correios-integration.php:216
-#: includes/integrations/class-wc-correios-integration.php:236
-#: includes/integrations/class-wc-correios-integration.php:286
+#: includes/integrations/class-wc-correios-integration.php:227
+#: includes/integrations/class-wc-correios-integration.php:253
+#: includes/integrations/class-wc-correios-integration.php:303
 msgid "Debug Log"
 msgstr "Log de depuração"
 
@@ -263,16 +268,11 @@ msgstr "Habilitar log"
 #. translators: %s: method title
 #. translators: %s: log link
 #: includes/abstracts/class-wc-correios-shipping.php:359
-#: includes/integrations/class-wc-correios-integration.php:221
-#: includes/integrations/class-wc-correios-integration.php:241
-#: includes/integrations/class-wc-correios-integration.php:290
+#: includes/integrations/class-wc-correios-integration.php:232
+#: includes/integrations/class-wc-correios-integration.php:258
+#: includes/integrations/class-wc-correios-integration.php:307
 msgid "Log %s events, such as WebServices requests."
 msgstr "Registra os eventos do(a) %s, como requisições no WebService."
-
-#: includes/abstracts/class-wc-correios-shipping.php:504
-#: includes/wc-correios-functions.php:84
-msgid "Invalid zip code."
-msgstr "CEP inválido."
 
 #: includes/admin/class-wc-correios-admin-orders.php:51
 #: includes/admin/views/html-meta-box-tracking-code.php:19
@@ -472,22 +472,22 @@ msgstr "HTML"
 msgid "Multipart"
 msgstr "Multipart (MIME)"
 
-#: includes/integrations/class-wc-correios-integration.php:89
+#: includes/integrations/class-wc-correios-integration.php:94
 msgid "Correios"
 msgstr "Correios"
 
-#: includes/integrations/class-wc-correios-integration.php:139
-#: includes/integrations/class-wc-correios-integration.php:482
+#: includes/integrations/class-wc-correios-integration.php:150
+#: includes/integrations/class-wc-correios-integration.php:499
 msgid "Settings"
 msgstr "Configurações"
 
 #. translators: %s: log link
-#: includes/integrations/class-wc-correios-integration.php:187
-#: includes/integrations/class-wc-correios-integration.php:221
+#: includes/integrations/class-wc-correios-integration.php:198
+#: includes/integrations/class-wc-correios-integration.php:232
 msgid "API Credentials"
 msgstr "Credenciais da API"
 
-#: includes/integrations/class-wc-correios-integration.php:190
+#: includes/integrations/class-wc-correios-integration.php:201
 msgid ""
 "It is necessary to have a contract with Correios to have API credentials. "
 "Visit %s to learn more."
@@ -495,42 +495,42 @@ msgstr ""
 "É obrigatório ter um contrato com o Correios para ter credenciais de API. "
 "Visite %s para saber mais."
 
-#: includes/integrations/class-wc-correios-integration.php:195
+#: includes/integrations/class-wc-correios-integration.php:206
 msgid "API Username"
 msgstr "Usuário da API"
 
-#: includes/integrations/class-wc-correios-integration.php:198
+#: includes/integrations/class-wc-correios-integration.php:209
 msgid "Usually your CNPJ or CPF"
 msgstr "Geralmente é seu CNPJ ou CPF"
 
-#: includes/integrations/class-wc-correios-integration.php:201
+#: includes/integrations/class-wc-correios-integration.php:212
 msgid "API Password"
 msgstr "Senha da API"
 
-#: includes/integrations/class-wc-correios-integration.php:205
+#: includes/integrations/class-wc-correios-integration.php:216
 msgid "A 40-character password that is generated on %s"
 msgstr "Um senha de 40 caracteres que é gerada em %s"
 
-#: includes/integrations/class-wc-correios-integration.php:210
+#: includes/integrations/class-wc-correios-integration.php:221
 msgid "Postage Card Number"
 msgstr "Número do Cartão de Postagem"
 
-#: includes/integrations/class-wc-correios-integration.php:213
+#: includes/integrations/class-wc-correios-integration.php:224
 msgid "A postage card is required to use the Correios API services"
 msgstr ""
 "Um cartão de postagem é obrigatório para usar os serviços de API do Correios"
 
-#: includes/integrations/class-wc-correios-integration.php:218
+#: includes/integrations/class-wc-correios-integration.php:229
 msgid "Enable logging for API Credentials"
 msgstr "Ativar log para as Credenciais de API"
 
 #. translators: %s: log link
-#: includes/integrations/class-wc-correios-integration.php:225
-#: includes/integrations/class-wc-correios-integration.php:241
+#: includes/integrations/class-wc-correios-integration.php:236
+#: includes/integrations/class-wc-correios-integration.php:258
 msgid "Tracking History Table"
 msgstr "Tabela do histórico de rastreamento"
 
-#: includes/integrations/class-wc-correios-integration.php:227
+#: includes/integrations/class-wc-correios-integration.php:238
 msgid ""
 "Displays a table with informations about the shipping in My Account > View "
 "Order page. Required username and password that can be obtained with the "
@@ -540,21 +540,32 @@ msgstr ""
 "pedido. Nome de usuário e senha são obrigatórios para o funcionamento e "
 "podem ser obtidos com a área comercial dos Correios."
 
-#: includes/integrations/class-wc-correios-integration.php:232
+#: includes/integrations/class-wc-correios-integration.php:243
 msgid "Enable Tracking History Table"
 msgstr "Ativar a tabela de histórico de rastreamento"
 
-#: includes/integrations/class-wc-correios-integration.php:238
+#: includes/integrations/class-wc-correios-integration.php:247
+msgid "Timeout"
+msgstr "Timeout"
+
+#: includes/integrations/class-wc-correios-integration.php:250
+msgid ""
+"Maximum time (in seconds) that a connection to the Correios server can last."
+msgstr ""
+"Tempo máximo (em segundos) que uma conexão ao servidores do Correios pode "
+"durar."
+
+#: includes/integrations/class-wc-correios-integration.php:255
 msgid "Enable logging for Tracking History"
 msgstr "Ativar log para histórico de rastreamento"
 
 #. translators: %s: log link
-#: includes/integrations/class-wc-correios-integration.php:245
-#: includes/integrations/class-wc-correios-integration.php:290
+#: includes/integrations/class-wc-correios-integration.php:262
+#: includes/integrations/class-wc-correios-integration.php:307
 msgid "Autofill Addresses"
 msgstr "Autopreenchimento de endereços"
 
-#: includes/integrations/class-wc-correios-integration.php:247
+#: includes/integrations/class-wc-correios-integration.php:264
 msgid ""
 "Displays a table with informations about the shipping in My Account > View "
 "Order page."
@@ -562,15 +573,15 @@ msgstr ""
 "Exibe uma tabela com informações da entrega na página Minha conta > Ver "
 "pedido."
 
-#: includes/integrations/class-wc-correios-integration.php:252
+#: includes/integrations/class-wc-correios-integration.php:269
 msgid "Enable Autofill Addresses"
 msgstr "Ativar autopreenchimento de endereços"
 
-#: includes/integrations/class-wc-correios-integration.php:256
+#: includes/integrations/class-wc-correios-integration.php:273
 msgid "Postcodes Validity"
 msgstr "Validade dos CEPs"
 
-#: includes/integrations/class-wc-correios-integration.php:260
+#: includes/integrations/class-wc-correios-integration.php:277
 msgid ""
 "Defines how long a postcode will stay saved in the database before a new "
 "query."
@@ -578,30 +589,30 @@ msgstr ""
 "Define por quanto tempo um CEP ficará salvo no banco de dados antes de uma "
 "nova consulta."
 
-#: includes/integrations/class-wc-correios-integration.php:262
+#: includes/integrations/class-wc-correios-integration.php:279
 msgid "1 month"
 msgstr "1 mês"
 
 #. translators: %s number of months
-#: includes/integrations/class-wc-correios-integration.php:264
-#: includes/integrations/class-wc-correios-integration.php:266
-#: includes/integrations/class-wc-correios-integration.php:268
+#: includes/integrations/class-wc-correios-integration.php:281
+#: includes/integrations/class-wc-correios-integration.php:283
+#: includes/integrations/class-wc-correios-integration.php:285
 msgid "%d months"
 msgstr "%d meses"
 
-#: includes/integrations/class-wc-correios-integration.php:269
+#: includes/integrations/class-wc-correios-integration.php:286
 msgid "Forever"
 msgstr "Para sempre"
 
-#: includes/integrations/class-wc-correios-integration.php:273
+#: includes/integrations/class-wc-correios-integration.php:290
 msgid "Force Autofill"
 msgstr "Forçar autopreenchimento"
 
-#: includes/integrations/class-wc-correios-integration.php:275
+#: includes/integrations/class-wc-correios-integration.php:292
 msgid "Enable Force Autofill"
 msgstr "Ativar opção de forçar o autopreenchimento"
 
-#: includes/integrations/class-wc-correios-integration.php:276
+#: includes/integrations/class-wc-correios-integration.php:293
 msgid ""
 "When enabled will autofill all addresses after the user finish to fill the "
 "postcode, even if the addresses are already filled."
@@ -610,12 +621,12 @@ msgstr ""
 "terminar de digitar o CEP, até mesmo quando o endereço já foi preenchido "
 "antes."
 
-#: includes/integrations/class-wc-correios-integration.php:280
-#: includes/integrations/class-wc-correios-integration.php:282
+#: includes/integrations/class-wc-correios-integration.php:297
+#: includes/integrations/class-wc-correios-integration.php:299
 msgid "Empty Database"
 msgstr "Limpar banco de dados"
 
-#: includes/integrations/class-wc-correios-integration.php:283
+#: includes/integrations/class-wc-correios-integration.php:300
 msgid ""
 "Delete all the saved postcodes in the database, use this option if you have "
 "issues with outdated postcodes."
@@ -623,33 +634,33 @@ msgstr ""
 "Deletar todos os CEPs salvos do banco de dados, utilize esta opção caso você "
 "tenha problemas com CEPs desatualizados."
 
-#: includes/integrations/class-wc-correios-integration.php:288
+#: includes/integrations/class-wc-correios-integration.php:305
 msgid "Enable logging for Autofill Addresses"
 msgstr "Ativar log para o autopreenchimento de endereços"
 
-#: includes/integrations/class-wc-correios-integration.php:310
+#: includes/integrations/class-wc-correios-integration.php:327
 msgid ""
 "Erro ao verificar suas credenciais:  Confira seu usuário, sua senha e o "
 "número do seu cartão de postagem."
 msgstr ""
 
-#: includes/integrations/class-wc-correios-integration.php:335
+#: includes/integrations/class-wc-correios-integration.php:352
 msgid "Are you sure you want to delete all postcodes from the database?"
 msgstr "Tem certeza que deseja deletar todos os CEPs do banco de dados?"
 
-#: includes/integrations/class-wc-correios-integration.php:457
+#: includes/integrations/class-wc-correios-integration.php:474
 msgid "Missing parameters!"
 msgstr "Faltando parâmetros!"
 
-#: includes/integrations/class-wc-correios-integration.php:462
+#: includes/integrations/class-wc-correios-integration.php:479
 msgid "Invalid nonce!"
 msgstr "Nonce inválido!"
 
-#: includes/integrations/class-wc-correios-integration.php:471
+#: includes/integrations/class-wc-correios-integration.php:488
 msgid "Postcode database emptied successfully!"
 msgstr "O banco de dados de CEPs foi limpo com sucesso!"
 
-#: includes/integrations/class-wc-correios-integration.php:486
+#: includes/integrations/class-wc-correios-integration.php:503
 msgid "Correios for WooCommerce"
 msgstr "Correios para WooCommerce"
 
@@ -662,22 +673,26 @@ msgid "SEDEX"
 msgstr "SEDEX"
 
 #. translators: %d: days to delivery
-#: includes/wc-correios-functions.php:51
+#: includes/wc-correios-functions.php:49
 msgid "Delivery within %d working day"
 msgid_plural "Delivery within %d working days"
 msgstr[0] "Entrega em %d dia útil"
 msgstr[1] "Entrega em %d dias úteis"
 
-#: includes/wc-correios-functions.php:83
+#: includes/wc-correios-functions.php:81
 msgid "System temporarily down. Please try again later."
 msgstr ""
 "Sistema temporariamente fora do ar. Por favor, tente novamente mais tarde."
 
-#: includes/wc-correios-functions.php:85
+#: includes/wc-correios-functions.php:82
+msgid "Invalid zip code."
+msgstr "CEP inválido."
+
+#: includes/wc-correios-functions.php:83
 msgid "Area with delivery temporarily subjected to different periods."
 msgstr "Área com entrega temporariamente sujeita a prazo diferenciado."
 
-#: includes/wc-correios-functions.php:86
+#: includes/wc-correios-functions.php:84
 msgid ""
 "The destination CEP is subject to special delivery conditions by ECT and "
 "will be carried out with the addition of up to 7 (seven) business days to "
@@ -687,12 +702,12 @@ msgstr ""
 "será realizada com o acréscimo de até 7 (sete) dias úteis ao prazo regular."
 
 #. translators: %s: tracking code
-#: includes/wc-correios-functions.php:178
+#: includes/wc-correios-functions.php:176
 msgid "Added a Correios tracking code: %s"
 msgstr "Adicionado o código de rastreamento dos Correios: %s"
 
 #. translators: %s: tracking code
-#: includes/wc-correios-functions.php:200
+#: includes/wc-correios-functions.php:198
 msgid "Removed a Correios tracking code: %s"
 msgstr "Removido um código de rastreamento dos Correios: %s"
 

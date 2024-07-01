@@ -82,6 +82,11 @@ class WC_Correios_Integration extends WC_Integration {
 	public $autofill_debug = null;
 
 	/**
+	 * @var number
+	 */
+	public $request_timeout = null;
+
+	/**
 	 * Initialize integration actions.
 	 */
 	public function __construct() {
@@ -102,6 +107,7 @@ class WC_Correios_Integration extends WC_Integration {
 		$this->autofill_validity          = $this->get_option( 'autofill_validity' );
 		$this->autofill_force             = $this->get_option( 'autofill_force' );
 		$this->autofill_empty_database    = $this->get_option( 'autofill_empty_database' );
+		$this->request_timeout            = (int) $this->get_option( 'request_timeout' );
 		$this->autofill_debug             = $this->get_option( 'autofill_debug' );
 
 		// Admin Settings actions.
@@ -125,6 +131,11 @@ class WC_Correios_Integration extends WC_Integration {
 		add_filter( 'woocommerce_correios_autofill_addresses_validity_time', array( $this, 'setup_autofill_addresses_validity_time' ), 10 );
 		add_filter( 'woocommerce_correios_autofill_addresses_force_autofill', array( $this, 'setup_autofill_addresses_force_autofill' ), 10 );
 		add_action( 'wp_ajax_correios_autofill_addresses_empty_database', array( $this, 'ajax_empty_database' ) );
+		add_filter( 'woocommerce_correios_request_timeout', array( $this, 'request_timeout' ), 10 );
+	}
+
+	public function request_timeout () {
+		return max( $this->request_timeout, 1 );
 	}
 
 	/**
@@ -231,6 +242,12 @@ class WC_Correios_Integration extends WC_Integration {
 				'type'    => 'checkbox',
 				'label'   => __( 'Enable Tracking History Table', 'correios-for-woocommerce' ),
 				'default' => 'no',
+			),
+			'request_timeout' => array(
+				'title'   => __( 'Timeout', 'correios-for-woocommerce' ),
+				'type'    => 'text',
+				'default' => '60',
+				'description' => __( 'Maximum time (in seconds) that a connection to the Correios server can last.', 'correios-for-woocommerce' ),
 			),
 			'tracking_debug'          => array(
 				'title'       => __( 'Debug Log', 'correios-for-woocommerce' ),
